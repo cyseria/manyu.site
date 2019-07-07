@@ -1,18 +1,18 @@
 +++
-title = "About Hugo"
+title = "关于"
 date = "2014-04-09"
 menu = "main"
 +++
 
-Hugo is the **world’s fastest framework for building websites**. It is written in Go.
 
-It makes use of a variety of open source projects including:
+Hey，这里是 Cyseria，也可以叫鳗鱼。
 
-* https://github.com/russross/blackfriday
-* https://github.com/alecthomas/chroma
-* https://github.com/muesli/smartcrop
-* https://github.com/spf13/cobra
-* https://github.com/spf13/viper
+程序媛一只，目前就职于百度。
 
-Learn more and contribute on [GitHub](https://github.com/gohugoio).
+热衷于探究新鲜的事物，崇尚简约主义。
 
+穿梭于像素与比特之间。
+
+生活在二次元与三次元的夹缝里。
+
+一个对未来充满希望又带点迷茫的纠结体。
