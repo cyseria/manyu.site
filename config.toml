@@ -1,4 +1,4 @@
-baseURL = "http://39.108.228.11:8080/"
+baseURL = "http://39.108.228.11/"
 languageCode = "zh-CN"
 title = "Cyseria | Blog"
 theme = "LeaveIt"
