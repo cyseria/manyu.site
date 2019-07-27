@@ -1,7 +1,6 @@
 # 个人博客
 
-
-安装主题：
+## start
 
 ```bash
 # 初次安装
@@ -21,6 +20,10 @@ hugo server --bind="0.0.0.0" -v -w -p 8080 -b http://192.168.1.8
 ```
 
 编译
+
 ```
 HUGO_ENV=production hugo --gc --minify
 ```
+
+
+
