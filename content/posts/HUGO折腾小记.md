@@ -1,14 +1,15 @@
 ---
 title: "HUGO 折腾小记"
 date: 2019-07-27 
-tags: ["hugo","linux","博客"]
-categories: ["生命不息折腾不止"]
+tags: ["hugo","linux"]
+categories: ["杂"]
 ---
 
+# 前言
+> 没事折腾一下把尘封已久的 hexo 换成了 hugo，试了一下编译速度明显比 hexo 快很多。怎么使用主题网上介绍比较多，这里记录下其他的东西。
 
-> 没事折腾一下把尘封已久的 hexo 换成了 hugo，试了一下编译速度明显比 hexo 快很多。怎么使用主题网上介绍比较多，这里记录下折腾部署相关的东西。
-
-无非两种方案：
+## 部署
+首先是部署，无非两种方案：
 
 1. Github pages。优点：免费，快捷。缺点：编译麻烦。
  大多教程都是告诉你本地编译后把 `publish` 推上去。个人觉得这样比较恶心，写博客就专心写博客。而且假如你在手机里浏览时，发现一个错别字，顺手就在 `GitHub` 的 `Web` 界面就把错别字改了，然而这样并不会重新生成静态页面和部署。
@@ -20,7 +21,6 @@ categories: ["生命不息折腾不止"]
 
 个人选择了方案二，主要是刚好有台阿里云服务器 + 轻度洁癖。
 
-## CentOS  环境安装
 ### Hugo 安装
 其实参照 [官方介绍](https://gohugo.io/getting-started/installing/)  已经介绍得很完美了，这里补充点注意事项。
 #### macOS
@@ -83,15 +83,22 @@ nginx -s reload
 nginx -s stop
 ```
 
-## Webhook 
+### Webhook 
 也不多说，使用的 [github_webhook_handler](https://links.jianshu.com/go?to=https%3A%2F%2Fgithub.com%2Frvagg%2Fgithub-webhook-handler)  +  [pm2](https://www.npmjs.com/package/pm2) 
 
-## 闲话
+## 主题
+
 一直以来都想着自己搭个博客系统，然后自己撸个主题。后端数据库都耍过一阵，但是最终还是懒，到了很多东西能用就行的心境。不过也一直告诉自己，要有造轮子的能力和不造轮子的决心。
+
 主题使用的  [leaveit](https://themes.gohugo.io/leaveit/) ， fork 下来参考 bear 改了改配色和格式，一些新版的修复，还有文字统计和阅读时间大概推算等。
 
-### 后续计划：
-- 文章详情侧边栏，对于长的文章感觉还是需要导航
-- 评论功能。一直以来想做划词/段落评论 + 普通评论的东西，看后续时间
-- 图片扔 cdn，这个不紧急
-- 进度条
+目前 修改/增加 的东西：
+
+* 修改主题配色和标题样式等细节调整
+* 新增进度条
+* 新增字数统计功能和阅读时间功能
+* 新增侧边栏
+* live2d
+
+基本都是用第三方的东西，就懒得详细些了，有兴趣的可以参见 [Github 的提交记录](https://github.com/cyseria/LeaveIt/commits/master)
+

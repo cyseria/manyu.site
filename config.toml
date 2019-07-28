@@ -64,3 +64,7 @@ hasCJKLanguage = true
     GitHub = "https://github.com/cyseria"
     Email   = "xcyseria@gmail.com"
 
+[params.live2d]
+    messagePath = "/live2d/"
+    homePath   = "http://39.108.228.11/"
+
