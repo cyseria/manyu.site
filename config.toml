@@ -54,7 +54,7 @@ hasCJKLanguage = true
     description = "鳗鱼的博客" # site description
     keywords = "博客, 前端" # site keywords
 
-    beian = ""
+    beian = "京ICP备19039603号"
     baiduAnalytics = ""
     dateFormatToUse="2006-01-02"
 

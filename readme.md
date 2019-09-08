@@ -13,8 +13,12 @@ git submodule update
 本地开发
 
 ```bash
+#install
+brew install hugo
+
 # 本地调试
 hugo server -D
+
 # ip 访问（服务器调试）
 hugo server --bind="0.0.0.0" -v -w -p 8080 -b http://192.168.1.8
 ```
