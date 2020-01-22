@@ -1,4 +1,4 @@
-baseURL = "http://39.108.228.11/"
+baseURL = "http://manyu.site/"
 languageCode = "zh-CN"
 title = "Cyseria | Blog"
 theme = "LeaveIt"
@@ -66,5 +66,5 @@ hasCJKLanguage = true
 
 [params.live2d]
     messagePath = "/live2d/"
-    homePath   = "http://39.108.228.11/"
+    homePath   = "http://manyu.site/"
 
