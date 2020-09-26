@@ -1,6 +1,6 @@
 # 个人博客
 
-## start
+## Quick Start
 
 ```bash
 # 初次安装
@@ -10,7 +10,7 @@ git submodule update --init --recursive
 git submodule update
 ```
 
-本地开发
+### 本地开发
 
 ```bash
 #install
@@ -23,7 +23,9 @@ hugo server -D
 hugo server --bind="0.0.0.0" -v -w -p 8080 -b http://192.168.1.8
 ```
 
-编译
+### 编译
+
+推送服务器自动编译，通常不需要这一步
 
 ```
 HUGO_ENV=production hugo --gc --minify
