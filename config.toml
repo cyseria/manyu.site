@@ -26,7 +26,7 @@ hasCJKLanguage = true
     weight = 1
 
   [[menu.main]]
-    name = "归档"
+    name = "轴线"
     url = "/posts/"
     weight = 2
 
@@ -35,10 +35,10 @@ hasCJKLanguage = true
     url = "/categories/"
     weight = 3
 
-  [[menu.main]]
-    name = "标签"
-    url = "/tags/"
-    weight = 4
+#  [[menu.main]]
+#    name = "标签"
+#    url = "/tags/"
+#    weight = 4
 
 
 [params]
