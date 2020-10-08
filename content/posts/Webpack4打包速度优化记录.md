@@ -65,9 +65,6 @@ entry: {
 },
 ```
 
-![](http://manyu-blog.oss-cn-shenzhen.aliyuncs.com/c9d5c21cfa16067fccf74808ef2e56aa.png)
-
-
 于是我们删除没太大影响的默认配置，再对公共模块做一定的抽取
 
 ```js
@@ -224,10 +221,10 @@ optimization: {
 
 因此，我们只需要对  `TerserPlugin`  的 `sourceMap` 关闭，或者对于打包构建的时候加上 `devtool: ‘source-map’`就能正常运行。我们将配置优化一下，顺手加上并行缓存之类的配置：
 
-```
+```js
  new TerserPlugin({
-      cache: true,
-      parallel: true,
+      cache: true,    // 缓存
+      parallel: true, // 并行
       exclude: /\.min\.js$/,
 }),
 ```
@@ -246,6 +243,7 @@ sassLoader,
 TODO：然而...
 ![](http://manyu-blog.oss-cn-shenzhen.aliyuncs.com/fd3827c4869fe03d4aef44164aa4f3d6.png)
 
+![](http://manyu-blog.oss-cn-shenzhen.aliyuncs.com/c9d5c21cfa16067fccf74808ef2e56aa.png?x-oss-process=image/resize,w_200)
 
 #### 注意事项
 
@@ -314,10 +312,22 @@ TODO：
 
 
 ## 四、其他
-1. 对于耗时的 loader，使用 `include`，尝试对 babel-loader 和 scss-loader 进行了处理。发现…并没有明显提升。
+
+一些有应该一定效果，但是没有实际去测试或者对本项目影响不大的
+
+* 对于耗时的 loader，使用 `include`，尝试对 babel-loader 和 scss-loader 进行了处理。发现并没有明显提升。
+* resolve。配置 webpack 如何寻找模块所对应的文件，也是尽可能的缩小范围。项目中已经比较全面的配置了 `extensions` 和 `alias` 两个属性，没再做试验。
+* [noParse](https://webpack.docschina.org/configuration/module/#modulenoparse)。如果一些第三方模块没有 `AMD/CommonJS` 规范版本（当然最好还是能找到对应的模块化版本），可以使用 `noParse` 来标识这个模块，这样 Webpack 会引入这些模块，但是不进行转化和解析。例如：jquery。
+* [ignore-plugin](https://webpack.js.org/plugins/ignore-plugin/)。webpack 的内置插件，忽略第三方包指定目录。例如: moment (2.24.0版本) 会将所有本地化内容和核心功能一起打包，我们就可以使用 `IgnorePlugin` 在打包时忽略本地化内容。
+* [externals](https://webpack.js.org/configuration/externals/)。对于通用外部依赖，我们可以将这些存储在 `CDN` 上(减少 `Webpack` 打包出来的 `js` 体积)。在 `index.html` 中通过 `<script>` 标签引入。对于 http2 不考虑复用的情况下其实挺多包都可以玩玩试试。
 
 
 ## 五、结尾
 以上，是作为 webpack 配置工程师的一点简单挣扎，以 Webpack 官网的一句话结尾。
 
 > **Don’t sacrifice the quality of your application for small performance gains!***Keep in mind that optimization quality is, in most cases, more important than build performance.*
+
+相关质量不错的文章：
+* [从构建进程间缓存设计 谈 Webpack5 优化和工作原理](https://zhuanlan.zhihu.com/p/110995118)
+* [五种可视化方案分析 webpack 打包性能瓶颈](https://juejin.im/post/6844904056985485320)
+* [cache-loader vs hard-source-webpack-plugin](https://github.com/webpack-contrib/cache-loader/issues/11#issuecomment-328480598)
