@@ -1,6 +1,6 @@
 ---
-title: "Webpack4打包优化记录"
-date: 2020-10-07
+title: "Webpack4 打包优化记录"
+date: 2019-10-07
 tags: ["webpack", "优化"]
 categories: ["工程化"]
 ---
