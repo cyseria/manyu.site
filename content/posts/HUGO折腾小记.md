@@ -2,7 +2,7 @@
 title: "HUGO 折腾小记"
 date: 2019-07-27 
 tags: ["hugo","linux"]
-categories: ["杂"]
+categories: ["随手调研"]
 ---
 
 # 前言

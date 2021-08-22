@@ -2,7 +2,7 @@
 title: 苹果 M1 评测
 date: 2021-02-01
 tags: ["评测"]
-categories: ["其他"]
+categories: ["随手调研"]
 ---
 
 先贴配置，内存 16G，硬盘容量 512，系统 macOS Big Sur（11.1）
