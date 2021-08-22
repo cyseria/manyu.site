@@ -38,10 +38,10 @@ hasCJKLanguage = true
     url = "/categories/"
     weight = 3
 
-#  [[menu.main]]
-#    name = "标签"
-#    url = "/tags/"
-#    weight = 4
+  [[menu.main]]
+    name = "标签"
+    url = "/tags/"
+    weight = 4
 
 
 [params]

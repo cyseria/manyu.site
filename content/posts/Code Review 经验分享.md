@@ -1,7 +1,7 @@
 ---
 title: Code Review 经验分享
 date: 2021-06-17
-tags: ["CR", "Code Review", "分享"]
+tags: ["CR", "分享"]
 categories: ["总结思考"]
 ---
 

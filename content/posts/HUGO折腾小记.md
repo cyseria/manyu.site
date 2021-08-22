@@ -1,7 +1,7 @@
 ---
 title: "HUGO 折腾小记"
 date: 2019-07-27 
-tags: ["hugo","linux"]
+tags: ["hugo", "评测"]
 categories: ["随手调研"]
 ---
 
