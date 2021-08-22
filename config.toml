@@ -1,6 +1,6 @@
 baseURL = "http://manyu.site/"
 languageCode = "zh-CN"
-title = "Cyseria | Blog"
+title = "鳗鱼 | Blog"
 theme = "LeaveIt"
 
 paginate = 12
@@ -46,7 +46,7 @@ hasCJKLanguage = true
 
 [params]
     since = 2019
-    author = "Cyseria"                           # Author's name
+    author = "鳗鱼"                           # Author's name
     avatar = "/images/me/avatar.jpg"           # Author's avatar
     subtitle = "生命不息折腾不止。"         # Subtitle
     cdn_url = ""           # Base CDN URL
@@ -71,3 +71,12 @@ hasCJKLanguage = true
     messagePath = "/live2d/"
     homePath   = "http://manyu.site/"
 
+[params.valine]
+    enable = true
+    appId = 'DQvhbt9lB1iX9rBQj9NYonJb-gzGzoHsz'
+    appKey = 'AOFsgEqbddiaNYGYj61qEl9U'
+    notify = true
+    verify = false
+    avatar = 'wavatar'
+    placeholder = '说点什么吧...'
+    visitor = true

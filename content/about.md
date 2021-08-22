@@ -6,7 +6,7 @@ menu = "main"
 
 ## 个人简介
 
-Hey，这里是 Cyseria，也可以叫鳗鱼。
+Hey，这里是蔓青，江湖人称鳗鱼。
 
 前端开发一只。
 
@@ -23,8 +23,6 @@ Hey，这里是 Cyseria，也可以叫鳗鱼。
 * 2013.09 -2017.06 华南农业大学就读
 
 <br/>
-
-
 
 <a href="https://github.com/cyseria" target="_blank" rel="me noopener" style="color: #4a4a4a">
     <i class="iconfont icon-github" style="font-size: 20px; margin-right: 3px;"></i>
