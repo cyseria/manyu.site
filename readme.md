@@ -25,7 +25,7 @@ hugo server --bind="0.0.0.0" -v -w -p 8080 -b http://192.168.1.8
 
 ### 编译
 
-推送服务器自动编译，通常不需要这一步，供调试时使用
+推送服务器自动编译（通常不需要这一步，供在 server 调试时使用
 
 ```
 HUGO_ENV=production hugo --gc --minify

@@ -1,8 +1,8 @@
 ---
 title: "Webpack4 打包优化记录"
 date: 2019-10-07
-tags: ["webpack", "优化"]
-categories: ["工程化"]
+tags: ["webpack"]
+categories: ["项目经验"]
 ---
 
 > 随着项目的生长，项目的打包速度&启动速度也变得越来越慢，于是决定开始一系列的优化之旅。首先最简单的，从 webpack 入口，在不修改代码的情况下，看看我们能做什么？

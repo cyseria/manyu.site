@@ -2,7 +2,7 @@
 title: npm audit 二三事
 date: 2018-07-03
 tags: ["npm"]
-categories: ["工程化"]
+categories: ["项目经验"]
 ---
 
 
